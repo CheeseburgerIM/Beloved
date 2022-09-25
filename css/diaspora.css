@@ -1232,6 +1232,7 @@ h1.title {
   font-size: 15px;
   line-height: 2;
   color: #232323;
+  text-align: center;
 }
 
 .content h1 {
@@ -1820,6 +1821,16 @@ pre .javascript .function {
 }
 
 /* CheeseburgerIM */
+.content p {
+  display: inline;
+}
+
+.content p img {
+  display: inline;
+  height: 170px;
+  object-fit: cover;
+}
+
 #pyz,
 #zyq {
   position: relative;
@@ -1828,11 +1839,12 @@ pre .javascript .function {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  margin: 7px auto 14px auto;
+  margin: 14px auto;
 }
 
 #pyz::after,
 #zyq::after {
+  display: block;
   content: '';
   position: absolute;
   width: 100%;
@@ -1850,26 +1862,15 @@ pre .javascript .function {
   background-image: url("/img/zyq.jpg");
 }
 
-#Gallery2n,
-#Gallery3n {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+p.pyz,
+p.zyq {
+  display: block;
 }
 
-#Gallery2n img,
-#Gallery3n img {
-  flex-basis: 0;
-  object-fit: cover;
+p.pyz {
+  text-align: left;
 }
 
-#Gallery2n img {
-  width: 45%;
-}
-
-#Gallery3n img {
-  width: 30%;
+p.zyq {
+  text-align: right;
 }
